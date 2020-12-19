@@ -1,16 +1,22 @@
 <header>
-	{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}<br>
-	== <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> ==<br>
-	{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}
-	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
+	<!-- {{ strings.Repeat ( .Site.Title | len | add 80 ) "=" }} -->
+	<div class="hdr">
+	<div class="top-bar">
+	<img src="{{ .Site.BaseURL }}/kale.webp" width="30" height="30" class="hdr left">
+   	<a href="{{ .Site.BaseURL }}" class="hdr" style="text-align:center;">{{ .Site.Title }}</a> 
+	<img src="{{ .Site.BaseURL }}/kale_r.webp" width="30" height="30" class="hdr right">
+	<!-- {{ strings.Repeat ( .Site.Title | len | add 80 ) "=" }} -->
+	<!-- <div style="float: right;">{{ .Site.Params.subtitle }}</div><br> -->
+	</div> 
+	<div class="bottom-bar">
 	<p>
 	<nav>
-			<a href="/"><b>Start</b></a>.
-			{{ with .Site.Menus.main }}
-			{{ range . }}
-			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.
-			{{ end }}
+			<a href="/">start</a>
+			<!-- <a href="{{ .URL | relURL }}">{{ .Name }}</a> -->
+			<a href="{{ .Site.BaseURL }}/blog/">blog</a>
+			<a href="{{ .Site.BaseURL }}/music/">music</a>
 	</nav>
 	</p>
-	{{ end }}
+	</div>
+	</div>
 </header>

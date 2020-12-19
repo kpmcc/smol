@@ -1,4 +1,13 @@
-html {overflow-y: scroll}
+html {overflow-y: scroll; background-color: #fff4de;}
+
+div.container{padding: 20px; border: #4f2e4a;border-radius: 10px;border-style:solid; height: 90%;}
+div.hdr{border-bottom-style:dotted; border-width:2px;}
+div.top-bar{height: 60%;}
+div.bottom-bar{height: 40%; padding-left: 10px; padding-right: 10px; margin-bottom: 8px; width:100%;}
+img.hdr {padding:10px; vertical-align:middle;}
+img.left {float: left;}
+img.right {float: right;}
+a.hdr {display: inline-block; width: 85%; vertical-align:middle; margin-top:15px}
 body{max-width:800px;margin:40px auto;padding:0 10px;font:14px/1.5 monospace;color:#444}h1,h2,h3{line-height:1.2}@media (prefers-color-scheme: dark){body{color:white;background:#444}a:link{color:#5bf}a:visited{color:#ccf}}
 p > code{color: #FFFFFF; background:#000000; padding:2px}
 pre{color: #FFFFFF; background:#000000; padding:24px; overflow-x: auto}
